@@ -284,7 +284,10 @@ tr.selected {
      top: -12px;
      font-size: var(--small-font-size);
  }
-
+#savepost:hover{
+    color: white;
+    background-color: red;
+}
  /*=============== BREAKPOINTS ===============*/
  /* For medium devices */
  @media screen and (min-width: 576px) {

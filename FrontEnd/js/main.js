@@ -2,18 +2,17 @@
 ////////set the button action to and backend connect to frontend set ajax
 $('#savepost').click( function (){
     //catch the input fealde  values
-   let  Id = $('#id').val(); // get value
-    let  Name = $('#name').val(); // get value
-    let  Password = $('#password').val(); // get value
-    let  Email= $('#email').val(); // get value
-    console.log(Id,Name,Password,Email);
+   let  Name = $('#username').val(); // get value
+    let  Password = $('#login-pass').val(); // get value
+    let  Email = $('#login-email').val(); // get value
+    // let  ConfPassword= $('#login-passconfirm').val(); // get value
+    console.log(Name,Password,Email);
 
     $.ajax({
         url: "http://localhost:8080/user/savepost",
         method:"POST",
         contentType:"application/json",
         "data":JSON.stringify({
-            "id":Id,
             "username":Name,
             "password":Password,
             "email":Email
