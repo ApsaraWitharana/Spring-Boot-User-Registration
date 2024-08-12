@@ -1,8 +1,9 @@
-@import 'config/variables.scss';
-@import 'base/base.scss';
-@import 'components/login.scss';
-@import 'components/breakpoints.scss';
-
+@import '/css/scss/config/variables.scss';
+@import '/css/scss/base/base.scss';
+@import '/css/scss/components/login.scss';
+@import '/css/scss/components/breakpoints.scss';
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 /*set css to form modified*/
 body {
     background-color: #f8f9fa;
@@ -105,8 +106,7 @@ tr.selected {
      }
  }
 /*//*/
- /*=============== GOOGLE FONTS ===============*/
- @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
  /*=============== VARIABLES CSS ===============*/
  :root {
      /*========== Colors ==========*/

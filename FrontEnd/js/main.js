@@ -9,22 +9,23 @@ $('#savepost').click( function (){
     console.log(Name,Password,Email);
 
     $.ajax({
-        url: "http://localhost:8080/user/savepost",
+        "url": "http://localhost:8080/user/savepost",
         method:"POST",
         contentType:"application/json",
         "data":JSON.stringify({
             "username":Name,
             "password":Password,
             "email":Email
+
         }),
         success:function (result){
             console.log(result)
-            alert("User Registration Successfully!!")
+            alert("done")
             ready();
         },
         error:function (error){
             console.log(error)
-            alert("User Registration UnSuccessfully!! Try Again!!")
+            alert("try again")
         }
     })
 
